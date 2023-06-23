@@ -1,0 +1,18 @@
+/* GLOBAL */
+@use "global/variables";
+@use "global/global";
+@use "global/fonts";
+
+/* BLOCKS */
+@use "blocks/main-header.scss";
+@use "blocks/nav.scss";
+@use "blocks/main-footer.scss";
+@use "blocks/ymap.scss";
+@use "blocks/hero-card.scss";
+@use "blocks/badge.scss";
+@use "blocks/title.scss";
+@use "blocks/button.scss";
+
+// SWIPER Styles
+// @use "blocks/swiper/swiper.scss";
+// @use "blocks/swiper/swiper-vars.scss";

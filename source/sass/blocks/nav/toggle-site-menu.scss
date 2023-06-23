@@ -1,0 +1,27 @@
+@use "../../global/variables.scss" as var;
+
+.toggle-site-menu {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 60px;
+  cursor: pointer;
+}
+
+.toggle-site-menu__image-container {
+  height: 16px;
+  // position: absolute;
+  transform: translateY(2px);
+}
+
+.toggle-site-menu__image-closed,
+.toggle-site-menu__image-opened {
+  display: none;
+}
+
+.toggle-site-menu__image-closed--active,
+.toggle-site-menu__image-opened--active {
+  display: block;
+}

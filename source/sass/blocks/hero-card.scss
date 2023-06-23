@@ -1,0 +1,73 @@
+@use "../global/variables.scss" as var;
+
+.hero-card {
+  padding: 20px;
+  padding-block-end: 60px;
+
+  &--slider-1 {
+    background-color: var.$background-flat-white;
+  }
+
+  &--slider-2 {
+    background-color: var.$background-lavender;
+  }
+}
+
+.hero-card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-card__title {
+  margin: 0;
+  margin-block-start: 4px;
+}
+
+.hero-card__badge {
+  order: -1;
+  margin: 0;
+  margin-block-start: 10px;
+}
+
+.hero-card__image {
+  order: -2;
+}
+
+.hero-card__description {
+  margin: 0;
+  margin-block-start: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.hero-card__footer {
+  margin: 0;
+  margin-block-start: 20px;
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-card__price {
+  display: flex;
+  align-content: center;
+  gap: 6px;
+}
+
+.hero-card__old-price {
+  padding-top: 9px;
+  color: var.$color-primary;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration-line: line-through;
+}
+
+.hero-card__new-price {
+  color: var.$color-black;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}

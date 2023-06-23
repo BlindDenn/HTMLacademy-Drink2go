@@ -1,0 +1,22 @@
+@use "../../global/variables.scss" as var;
+
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  color: var.$color-gray;
+}
+
+.copyright__logo {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var.$color-primary;
+  }
+}
+
+.copyright__logo-sign {
+  transform: translateY(4px);
+}

@@ -1,0 +1,28 @@
+/* Colors */
+
+$color-primary: #7859cf;
+$color-primary-25a: rgba($color-primary, 0.25);
+$color-primary-65a: rgba($color-primary, 0.65);
+$color-base-secondary: #f0ebff;
+$color-primary-lighter: #9070ec;
+$color-primary-darker: #593cac;
+$color-secondary: #f0ebff;
+$color-gray: #bdbdbd;
+$color-black: #333333;
+$color-black-10a: rgba($color-black, 0.5);
+$color-white: #ffffff;
+$background-flat-white: #f3ebe1;
+$background-lavender: #eae6fc;
+/* Viewports */
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+$mobile-only: $breakpoint-tablet - 0.2px;
+
+/* FontWeights */
+
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;

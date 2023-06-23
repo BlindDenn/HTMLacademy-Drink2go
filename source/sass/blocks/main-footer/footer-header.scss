@@ -1,0 +1,48 @@
+@use "../../global/variables.scss" as var;
+@forward "./footer-header/social-nav.scss";
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: var.$breakpoint-desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.footer-header__logo-sign {
+  display: block;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    width: 170px;
+  }
+}
+
+.footer-header__logo-sign-middle {
+  @media (min-width: var.$breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.footer-header__logo-sign-large {
+  @media (max-width: var.$mobile-only) {
+    display: none;
+  }
+}
+
+.footer-header__logo-text {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  display: none;
+
+  @media (min-width: var.$breakpoint-desktop) {
+    display: block;
+  }
+}
+
+.footer-header__social-nav {
+  @media (min-width: var.$breakpoint-desktop) {
+    margin-block-start: 50px;
+  }
+}

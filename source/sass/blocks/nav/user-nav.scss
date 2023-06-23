@@ -1,0 +1,68 @@
+@use "../../global/variables.scss" as var;
+
+.user-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.user-nav__item {
+  position: relative;
+  min-width: 60px;
+}
+
+.user-nav__link {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var.$color-black;
+  fill: var.$color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 32px 22px 32px 22px;
+
+  @media (max-width: (var.$breakpoint-tablet - 0.2px)) {
+    padding-block-start: 22px;
+    padding-block-end: 22px;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+}
+
+.user-nav__link:hover,
+.user-nav__link:focus-visible {
+  color: var.$color-primary;
+  fill: var.$color-primary;
+}
+
+.user-nav__link:active {
+  color: var.$color-primary;
+  fill: var.$color-primary;
+  background-color: var.$color-base-secondary;
+
+  @media (max-width: (var.$breakpoint-tablet - 0.2px)) {
+    color: var.$color-black;
+  }
+}
+
+.user-nav__icon {
+  display: block;
+
+  @media (min-width: var.$breakpoint-desktop) {
+    left: 28px;
+  }
+}
+
+.user-nav__text {
+  display: none;
+
+  @media (min-width: var.$breakpoint-desktop) {
+    display: block;
+  }
+}

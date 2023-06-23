@@ -1,0 +1,63 @@
+@use "../../global/variables.scss" as var;
+
+.nav__logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-inline-start: 20px;
+  // width: 240px;
+  text-decoration: none;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-inline-start: 0;
+  }
+}
+
+.nav_logo-img-container {
+  position: relative;
+  width: 170px;
+}
+
+.nav__logo-img-small,
+.nav__logo-img-middle,
+.nav__logo-img-large {
+  display: none;
+}
+
+.nav__logo-text {
+  display: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: var.$color-black;
+}
+
+@media (min-width: var.$breakpoint-desktop) {
+  .nav__logo-text {
+    display: block;
+  }
+
+  .nav__logo-img-large {
+    display: block;
+  }
+}
+
+@media (min-width: var.$breakpoint-tablet) and (max-width: (var.$breakpoint-desktop - 0.2px)) {
+  .nav__logo-img-middle {
+    display: block;
+  }
+
+  .nav_logo-img-container {
+    width: 83px;
+  }
+}
+
+@media (max-width: var.$mobile-only) {
+  .nav__logo-img-small {
+    display: block;
+  }
+
+  .nav_logo-img-container {
+    width: 32px;
+    // height: 36px;
+  }
+}

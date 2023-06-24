@@ -7,4 +7,9 @@
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 0.72px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    font-size: 56px;
+    line-height: 80px;
+  }
 }

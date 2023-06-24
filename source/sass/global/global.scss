@@ -45,6 +45,12 @@
     }
   }
 
+  &--swiper {
+    @media (max-width: (var.$breakpoint-desktop - 0.2px)) {
+      padding: 0;
+      margin-inline: auto;
+    }
+  }
 
   &--footer {
     @media (max-width: var.$mobile-only) {

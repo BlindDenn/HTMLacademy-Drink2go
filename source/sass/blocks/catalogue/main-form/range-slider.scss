@@ -4,6 +4,8 @@
   background-color: var.$color-gray;
   border: none;
   box-shadow: none;
+  padding-inline-start: 7px;
+  padding-inline-end: 17px;
 }
 
 .noUi-horizontal {
@@ -29,7 +31,7 @@
   box-shadow: none;
   border: 2px solid var.$color-primary-lighter;
   top: -10px;
-  right: 0;
+  // right: 0;
 
   &:hover,
   &:focus-visible {
@@ -60,5 +62,5 @@
 }
 
 .noUi-handle-lower {
-  transform: translateX(24px);
+  // transform: translateX(24px);
 }

@@ -3,13 +3,15 @@
 @use "global/global";
 @use "global/fonts";
 
-/* BLOCKS */
+/* SECTIONS */
 @use "blocks/main-header.scss";
 @use "blocks/nav.scss";
-@use "blocks/main-footer.scss";
-@use "blocks/ymap.scss";
-@use "./blocks/hero-sectoin.scss";
 @use "blocks/hero-card.scss";
+@use "blocks/catalogue.scss";
+@use "blocks/ymap.scss";
+@use "blocks/main-footer.scss";
+
+/* BLOCKS */
 @use "blocks/badge.scss";
 @use "blocks/title.scss";
 @use "blocks/button.scss";

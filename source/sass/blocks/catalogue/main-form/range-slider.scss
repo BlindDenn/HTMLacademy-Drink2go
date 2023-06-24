@@ -1,0 +1,64 @@
+@use "./../../../global/variables.scss" as var;
+
+.noUi-target {
+  background-color: var.$color-gray;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-horizontal {
+  height: 2px;
+}
+
+.noUi-connects {
+  height: 4px;
+}
+
+.noUi-base {
+  transform: translateY(-1px);
+}
+
+.noUi-connect {
+  background-color: var.$color-primary-lighter;
+}
+
+.noUi-handle.noUi-handle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: none;
+  border: 2px solid var.$color-primary-lighter;
+  top: -10px;
+  right: 0;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    background-color: transparent;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: var.$color-gray;
+  }
+
+  &:active::before {
+    background-color: var.$color-primary;
+  }
+}
+
+.noUi-handle-lower {
+  transform: translateX(24px);
+}

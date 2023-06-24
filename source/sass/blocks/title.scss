@@ -1,15 +1,22 @@
 @use "../global/variables.scss" as var;
 
 .title {
+  margin: 0;
   color: var.$color-black;
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 48px;
-  letter-spacing: 0.72px;
+  line-height: 36px;
 
-  @media (min-width: var.$breakpoint-tablet) {
-    font-size: 56px;
-    line-height: 80px;
+  &--hero {
+    margin-block-start: 4px;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.72px;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: 56px;
+      line-height: 80px;
+    }
   }
 }

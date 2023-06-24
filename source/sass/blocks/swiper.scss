@@ -1,5 +1,9 @@
 @use "../global/variables.scss" as var;
 
+.swiper-pagination {
+  transform: translateY(-20px);
+}
+
 .swiper-pagination-bullet {
   display: none;
   width: 62px;

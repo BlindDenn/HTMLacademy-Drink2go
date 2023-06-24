@@ -1,0 +1,7 @@
+@forward "./main-form/fieldset.scss";
+@forward "./main-form/range-slider.scss";
+
+.main-form {
+  display: grid;
+  gap: 30px;
+}

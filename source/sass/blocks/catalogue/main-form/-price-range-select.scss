@@ -1,0 +1,31 @@
+@use "./../../../global/variables.scss" as var;
+
+.price-range-select {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price-range-select__legend {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.price-range-select__label {
+  margin: 0;
+  padding: 0;
+}
+
+.price-range-select__input {
+  width: 118px;
+  padding-block: 6px;
+  padding-inline: 8px;
+  border: 2px solid var.$color-primary;
+  border-radius: 4px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}

@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <title>Drink2go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
+
   <header class="page__header page-container page-container--header main-header">
     <nav class="main-header__nav nav">
 
@@ -73,14 +75,14 @@
   <main class="page__main main">
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
 
-    <section class="swiper hero-section">
+    <section class="hero-section swiper">
       <h2 class="visually-hidden">Самые aктуальные предложения интернет-магазина кофейных напитков</h2>
 
       <div class="swiper-wrapper">
 
         <div class="hero-section__hero-card hero-card hero-card--slider-1 swiper-slide">
           <div class="hero-card__container page-container page-container--swiper">
-            <h3 class="hero-card__title title">Декаф Флэт Уайт</h3>
+            <h3 class="hero-card__title title title--hero">Декаф Флэт Уайт</h3>
             <p class="hero-card__badge badge">Новинка!</p>
             <picture class="hero-card__picture">
               <source type="image/webp" media="(min-width: 1400px)"
@@ -192,7 +194,7 @@
     <section class="advantages page-container">
       <h2 class="visually-hidden">Основные конкурентные преимущества продукции компании Drink2go.</h2>
       <p class="advantages__badge badge">Преимущества</p>
-      <p class="advantages__title">Главные причины выбрать Drink2Go</p>
+      <p class="advantages__title title">Главные причины выбрать Drink2Go</p>
       <ul class="advantages__list">
         <li class="advantages__item">
           <h3 class="advantages__item-title">Скорость</h3>
@@ -224,76 +226,89 @@
     <section class="catalogue page-container">
       <h2 class="visually-hidden">Каталог кофейных напитков компании Drink2go.</h2>
       <p class="catalogue__badge badge">Каталог</p>
-      <h2 class="catalogue-title">Каталог кофейных напитков</h2>
+      <h2 class="catalogue__title title">Каталог кофейных напитков</h2>
 
-      <form class="catalogue__form main-form" action="post">
+      <form class="catalogue__main-form main-form" action="post">
         <h3 class="visually-hidden">Форма фильтров выбора товаров каталога</h3>
 
-        <fieldset class="main-form__price-range-select price-range-select">
-          <legend class="price-range-select__legend">Цена</legend>
-          <input type="range" class="price-range-select__input">
+        <fieldset class="main-form__fieldset fieldset">
+          <legend class="fieldset__legend">Цена</legend>
+          <div class="fieldset__slider" id="slider"></div>
+          <div class="fieldset__labels">
+            <label class="fieldset__label-range">
+              <span class="visually-hidden">Нижняя ценовая граница</span>
+              <input class="fieldset__input-range" type="number" min="0" max="999" placeholder="0" id="input-bottom">
+            </label>
+            <span class="fieldset__labels-separator">-</span>
+            <label class="fieldset__labe-range">
+              <span class="visually-hidden">Верхняя ценовая граница</span>
+              <input class="fieldset__input-range" type="number" min="0" max="999" value="900" id="input-top">
+            </label>
+          </div>
+
         </fieldset>
 
-        <fieldset class="main-form__milk-content milk-content">
-          <legend class="milk-content__legend">Наличие молока</legend>
-          <ul class="milk-content__list">
-            <li class="milk-content__item">
-              <label class="milk-content__label">
-                <input type="radio" name="milk-content-radio" value="unconsiderable" checked>
+        <fieldset class="main-form__fieldset fieldset">
+          <legend class="fieldset__legend">Наличие молока</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-radio" type="radio" name="milk-content-radio" value="unconsiderable"
+                  checked>
                 Неважно
               </label>
             </li>
-            <li>
-              <label class="milk-content__label">
-                <input type="radio" name="milk-content-radio" value="animal">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-radio" type="radio" name="milk-content-radio" value="animal">
                 Только животное
               </label>
             </li>
-            <li>
-              <label class="milk-content__label">
-                <input type="radio" name="milk-content-radio" value="plant">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-radio" type="radio" name="milk-content-radio" value="plant">
                 Только растительное
               </label>
             </li>
-            <li>
-              <label class="milk-content__label">
-                <input type="radio" name="milk-content-radio" id="no-milk" disabled>
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-radio" type="radio" name="milk-content-radio" id="no-milk" disabled>
                 Без молока
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="main-form__origin origin">
-          <legend class="origin__legend">Страна произрастания</legend>
-          <ul class="origin__list">
-            <li class="origin__item">
-              <label class="origin__label">
-                <input class="origin__checkbox" type="checkbox" checked>
+        <fieldset class="main-form__fieldset fieldset">
+          <legend class="fieldset__legend">Страна произрастания</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-checkbox" type="checkbox" checked>
                 Бразилия
               </label>
             </li>
-            <li class="origin__item">
-              <label class="origin__label">
-                <input class="origin__checkbox" type="checkbox">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-checkbox" type="checkbox">
                 Эфиопия
               </label>
             </li>
-            <li class="origin__item">
-              <label class="origin__label">
-                <input class="origin__checkbox" type="checkbox">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-checkbox" type="checkbox">
                 Колумбия
               </label>
             </li>
-            <li class="origin__item">
-              <label class="origin__label">
-                <input class="origin__checkbox" type="checkbox">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-checkbox" type="checkbox">
                 Коста-Рика
               </label>
             </li>
-            <li class="origin__item">
-              <label class="origin__label">
-                <input class="origin__checkbox" type="checkbox" disabled>
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input-checkbox" type="checkbox" disabled>
                 Перу
               </label>
             </li>
@@ -475,6 +490,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=c270fffc-531a-4f8f-bcf4-47e845baec9c&lang=ru_RU">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="vendor/nouislider/nouislider.js"></script>
 
 </body>
 

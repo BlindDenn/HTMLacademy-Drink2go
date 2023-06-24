@@ -1,0 +1,76 @@
+@use "./../../../global/variables.scss" as var;
+
+.fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset__legend {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.fieldset__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldset__slider {
+  margin-block-start: 30px;
+}
+
+.fieldset__labels {
+  margin-block-start: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fieldset_label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fieldset_label-range {
+  margin: 0;
+  padding: 0;
+}
+
+
+.fieldset__input-range {
+  width: 118px;
+  padding-block: 6px;
+  padding-inline: 8px;
+  border: 2px solid var.$color-primary-lighter;
+  border-radius: 4px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &::placeholder {
+    color: var.$color-gray;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: 2px solid var.$color-primary-darker;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  appearance: textfield;
+}

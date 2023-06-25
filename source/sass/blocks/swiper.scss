@@ -1,5 +1,9 @@
 @use "../global/variables.scss" as var;
 
+.swiper-slide {
+  height: unset;
+}
+
 .swiper-pagination {
   transform: translateY(-20px);
 }

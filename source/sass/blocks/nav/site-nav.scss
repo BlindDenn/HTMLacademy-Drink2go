@@ -15,7 +15,7 @@
   text-align: center;
 
   @media (max-width: var.$mobile-only) {
-    z-index: 1;
+    z-index: 2;
     border-top: 1px solid var.$color-base-secondary;
     flex-direction: column;
     width: 100%;

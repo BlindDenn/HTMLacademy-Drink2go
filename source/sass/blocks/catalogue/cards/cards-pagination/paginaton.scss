@@ -61,6 +61,6 @@
 
 .pagination__nav-link-text {
   @media (max-width: var.$mobile-only) {
-    visibility: hidden;
+    display: none;
   }
 }

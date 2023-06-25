@@ -133,3 +133,61 @@
     background-color: var.$color-gray;
   }
 }
+
+.fieldset__input-checkbox {
+  appearance: none;
+  margin: 0;
+  position: relative;
+  width: 42px;
+  height: 24px;
+  border: 2px solid var.$color-gray;
+  border-radius: 12px;
+  background-color: var.$color-gray;
+  transition: 200ms;
+
+  &:hover,
+  &:focus-visible {
+    border-color: var.$color-primary;
+    background-color: var.$color-primary-25a;
+  }
+
+  &:checked {
+    background-color: var.$color-primary;
+    border-color: var.$color-primary;
+  }
+
+  &:checked:disabled:hover {
+    background-color: var.$color-gray-light;
+    // border-color: var.$color-primary;
+  }
+
+  &:checked:hover,
+  &:checked:focus-visible {
+    background-color: var.$color-primary-65a;
+  }
+
+  &:disabled {
+    background-color: var.$color-gray-light;
+    border-color: var.$color-gray-light;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var.$color-white;
+    left: 0;
+    transition: 200ms;
+  }
+
+  &:checked::after {
+    left: 18px;
+  }
+
+  &:checked:disabled::after {
+    background-color: var.$color-gray;
+  }
+}

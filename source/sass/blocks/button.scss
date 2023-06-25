@@ -1,6 +1,7 @@
 @use "../global/variables.scss" as var;
 
 .button {
+  position: relative;
   padding-block: 8px;
   padding-inline: 20px;
   border: none;
@@ -11,13 +12,18 @@
   color: var.$color-white;
   text-decoration: none;
 
+  // Основное состояние допольнительных кнопок
+
   &--reset {
     color: var.$color-primary;
     background-color: var.$color-white;
   }
 
+  // Состояния
+
   &:hover,
   &:focus-visible {
+    outline: none;
     color: var.$color-white;
     background-color: var.$color-primary-lighter;
   }
@@ -26,6 +32,35 @@
     color: var.$color-white;
     background-color: var.$color-primary-darker;
   }
+
+  &[disabled] {
+    color: var.$color-white;
+    background-color: var.$color-gray;
+  }
+
+  &--reset[disabled] {
+    background-color: var.$color-gray-light;
+  }
+
+  &--add-to-cart {
+    font-size: 14px;
+    line-height: 20px;
+    padding-inline-start: 46px;
+  }
+
+  &--add-to-cart::after {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    content: "";
+    width: 20px;
+    height: 16px;
+    mask-image: url("../../img/sprite.svg#add-to-cart");
+    background-color: var.$color-white;
+  }
+
+  // Кнопки пагинации
 
   &--pagination,
   &--pagination-nav {
@@ -41,11 +76,51 @@
     padding-inline: 20px;
   }
 
+  &--pagination-nav:hover::after,
+  &--pagination-nav:focus-visible::after {
+    border-color: var.$color-white;
+  }
+
+  @media (max-width: var.$mobile-only) {
+    // затычка
+
+    &--pagination-nav-prev::after,
+    &--pagination-nav-next::after {
+      display: block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-top: 2px solid var.$color-primary;
+      border-right: 2px solid var.$color-primary;
+    }
+
+    &--pagination-nav-prev::after {
+      transform: translate(-50%, -50%) rotate(-135deg);
+    }
+
+    &--pagination-nav-next::after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+
   &--pagination-current,
   &--pagination-current:hover,
   &--pagination-current:active {
     background-color: transparent;
     color: var.$color-black;
     font-weight: 600;
+  }
+
+  &--pagination[disabled] {
+    color: var.$color-white;
+    background-color: var.$color-gray-light;
+  }
+
+  &--pagination[disabled]::after {
+    border-color: var.$color-white;
   }
 }

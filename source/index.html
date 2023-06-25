@@ -355,7 +355,7 @@
               </p>
               <div class="card__footer">
                 <span class="card__price">225 &#8381;</span>
-                <a class="card__order-button button" href="#">В корзину</a>
+                <a class="card__order-button button button--add-to-cart" href="#">В корзину</a>
               </div>
             </li>
 
@@ -391,10 +391,11 @@
           </ul>
 
           <ul class="cards__pagination pagination">
-            <!-- для скрытия навигационной кнопки пажинации добавить "pagination__item--nav--disabled" -->
-            <li class="pagination__item pagination__item--nav pagination__item--prev">
-              <a href="#" class="pagination__link button button--pagination button--pagination-nav"> <span
-                  class="pagination__nav-link-text">Назад</span></a>
+            <!-- для скрытия навигационной кнопки пажинации добавить класс pagination_**-nav-disabled" -->
+            <li class="pagination__item pagination__item--nav">
+              <a href="#"
+                class="pagination__link button button--pagination button--pagination-nav button--pagination-nav-prev">
+                <span class="pagination__nav-link-text">Назад</span></a>
             </li>
             <li class="pagination__item">
               <a href="#" class="pagination__link button button--pagination">1</a>
@@ -405,10 +406,11 @@
             <li class="pagination__item">
               <a href="#" class="pagination__link button button--pagination">3</a>
             </li>
-            <!-- для скрытия навигационной кнопки пажинации добавить "pagination__item--nav--disabled" -->
+            <!-- для скрытия навигационной кнопки пажинации добавить класс pagination_**-nav-disabled -->
             <li class="pagination__item pagination__item--nav pagination__item--next">
-              <a href="#" class="pagination__link button button--pagination button--pagination-nav"> <span
-                  class="pagination__nav-link-text">Вперед</span></a>
+              <a href="#"
+                class="pagination__link button button--pagination button--pagination-nav button--pagination-nav-next">
+                <span class="pagination__nav-link-text">Вперед</span></a>
             </li>
 
           </ul>

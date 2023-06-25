@@ -36,9 +36,16 @@
   align-items: center;
 }
 
-.fieldset_label {
+.fieldset__label {
+  display: flex;
+  gap: 14px;
+  align-items: center;
   font-size: 16px;
   line-height: 24px;
+
+  &:has([disabled]) {
+    color: var.$color-gray;
+  }
 }
 
 .fieldset__label-range {
@@ -82,4 +89,47 @@
   }
 
   appearance: textfield;
+}
+
+.fieldset__input-radio {
+  appearance: none;
+  margin: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var.$color-primary;
+
+  &:disabled {
+    border-color: var.$color-gray;
+  }
+
+  &::after,
+  &:disabled::after,
+  &:disabled:hover::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 2px;
+    left: 2px;
+    transition: 200ms;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: var.$color-primary-25a;
+  }
+
+  &:checked::after {
+    background-color: var.$color-primary;
+  }
+
+  &:checked:disabled::after {
+    background-color: var.$color-gray;
+  }
 }

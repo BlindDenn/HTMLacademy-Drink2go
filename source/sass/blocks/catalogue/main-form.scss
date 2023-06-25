@@ -1,7 +1,28 @@
 @forward "./main-form/fieldset.scss";
 @forward "./main-form/range-slider.scss";
+@use "../../global/variables.scss" as var;
 
 .main-form {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
+
+  @media (min-width: var.$breakpoint-tablet) and (max-width: (var.$breakpoint-desktop - 0.2px)) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.main-form__buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    flex-direction: row;
+    width: 277px;
+  }
 }

@@ -225,10 +225,12 @@
 
     <section class="catalogue page-container">
       <h2 class="visually-hidden">Каталог кофейных напитков компании Drink2go.</h2>
-      <p class="catalogue__badge badge">Каталог</p>
-      <h2 class="catalogue__title title">Каталог кофейных напитков</h2>
+      <div class="catalogue__header">
+        <p class="catalogue__badge badge">Каталог</p>
+        <h2 class="catalogue__title title">Каталог кофейных напитков</h2>
+      </div>
 
-      <form class="catalogue__main-form main-form" action="post">
+      <form class="catalogue__main-form main-form" action="https://echo.htmlacademy.ru" method="post">
         <h3 class="visually-hidden">Форма фильтров выбора товаров каталога</h3>
 
         <fieldset class="main-form__fieldset fieldset">
@@ -237,12 +239,14 @@
           <div class="fieldset__labels">
             <label class="fieldset__label-range">
               <span class="visually-hidden">Нижняя ценовая граница</span>
-              <input class="fieldset__input-range" type="number" min="0" max="999" placeholder="0" id="input-bottom">
+              <input class="fieldset__input-range" type="number" min="0" max="999" value="0" placeholder="0"
+                id="input-0" name="price-range-min">
             </label>
             <span class="fieldset__labels-separator">-</span>
-            <label class="fieldset__labe-range">
+            <label class="fieldset__label-range">
               <span class="visually-hidden">Верхняя ценовая граница</span>
-              <input class="fieldset__input-range" type="number" min="0" max="999" value="900" id="input-top">
+              <input class="fieldset__input-range" type="number" min="0" max="999" value="900" id="input-1"
+                name="price-range-max">
             </label>
           </div>
 
@@ -315,8 +319,10 @@
           </ul>
         </fieldset>
 
-        <button class="main-form__submit-button button" type="submit">Применить</button>
-        <button class="main-form__reset-button button" type="reset">Сбросить</button>
+        <div class="main-form__buttons-container">
+          <button class="main-form__submit-button button" type="submit">Применить</button>
+          <button class="main-form__reset-button button button--reset" type="reset">Сбросить</button>
+        </div>
       </form>
 
       <form class="catalogue__card-sorter card-sorter">

@@ -1,1 +1,70 @@
 @forward "./catalogue/main-form.scss";
+@forward "./catalogue/card-sorter.scss";
+@use "../global/variables.scss" as var;
+
+.catalogue {
+  background-color: var.$backround-gray-lightest;
+  padding-block-start: 50px;
+  padding-block-end: 44px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    padding-block-start: 80px;
+    padding-block-end: 90px;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    padding-block-start: 100px;
+    padding-block-end: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      "header header header header"
+      "filter sorter sorter sorter"
+      "filter cards cards cards";
+    column-gap: 30px;
+  }
+}
+
+.catalogue__header {
+  margin-block-end: 20px;
+  grid-area: header;
+
+  @media (min-width: var.$breakpoint-desktop) {
+    margin-block-end: 40px;
+  }
+}
+
+.catalogue__badge {
+  margin: 0;
+}
+
+.catalogue__title {
+  margin: 0;
+  margin-block-start: 4px;
+}
+
+.catalogue__main-form {
+  // grid-column: 1 / 2;
+  grid-area: filter;
+}
+
+.catalogue__card-sorter {
+  grid-area: sorter;
+  margin-top: 40px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-top: 36px;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    height: min-content;
+    margin-top: 0;
+  }
+}
+
+.catalogue__cards {
+  // grid-column: 2 / -1;
+  // grid-row: 3 / -1;
+  grid-area: cards;
+}

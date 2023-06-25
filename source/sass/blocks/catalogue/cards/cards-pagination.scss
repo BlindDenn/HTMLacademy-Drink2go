@@ -1,0 +1,12 @@
+@forward "./cards-pagination/paginaton.scss";
+@use "../../../global/variables.scss" as var;
+
+.cards__pagination {
+  margin-block-start: 40px;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: var.$mobile-only) {
+    justify-content: center;
+  }
+}

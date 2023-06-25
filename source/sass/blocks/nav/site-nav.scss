@@ -80,7 +80,7 @@
 
 .site-nav__link--current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: 0px;
   left: 0;
   content: "";
   width: 100%;

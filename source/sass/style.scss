@@ -10,13 +10,10 @@
 @use "blocks/catalogue.scss";
 @use "blocks/ymap.scss";
 @use "blocks/main-footer.scss";
+@use "blocks/advantages.scss";
 
-/* BLOCKS */
+/* COMMON BLOCKS */
 @use "blocks/badge.scss";
 @use "blocks/title.scss";
 @use "blocks/button.scss";
 @use "blocks/swiper.scss";
-
-// SWIPER Styles
-// @use "blocks/swiper/swiper.scss";
-// @use "blocks/swiper/swiper-vars.scss";

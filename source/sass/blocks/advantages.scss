@@ -1,0 +1,129 @@
+@use "../global/variables.scss" as var;
+
+.advantages {
+  padding-block-start: 50px;
+  padding-block-end: 60px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    padding-block-start: 60px;
+    padding-block-end: 100px;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    padding-block-start: 80px;
+    padding-block-end: 120px;
+  }
+}
+
+.advantages__badge {
+  margin: 0;
+  order: 0;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-block-start: 4px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  margin-block-start: 36px;
+  padding: 0;
+  display: grid;
+  gap: 32px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-block-start: 60px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    margin-block-start: 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-block-start: 66px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    padding: 0;
+    padding-inline-start: 67px;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    padding: 0;
+    padding-block-start: 76px;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 56px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: var.$breakpoint-tablet) {
+      top: 2px;
+      left: 0px;
+      transform: none;
+    }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--speed::before {
+    background-image: url('../../img/sprite.svg#adv-speed');
+  }
+
+  &--comfort::before {
+    background-image: url('../../img/sprite.svg#adv-comfort');
+  }
+
+  &--energy::before {
+    background-image: url('../../img/sprite.svg#adv-energy');
+  }
+
+  &--eco::before {
+    background-image: url('../../img/sprite.svg#adv-eco');
+  }
+}
+
+.advantages__item-title {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages__item-description {
+  margin: 0;
+  margin-block-start: 4px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    text-align: left;
+    margin-block-start: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

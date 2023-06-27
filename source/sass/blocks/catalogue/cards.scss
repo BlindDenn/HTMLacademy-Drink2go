@@ -3,7 +3,7 @@
 @use "../../global/variables.scss" as var;
 
 .cards {
-  margin-block-start: 20px;
+  margin-block-start: 17px;
 }
 
 .cards__list {
@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 30px;
+  gap: 20px;
 
   @media (min-width: 550px) {
     grid-template-columns: 1fr 1fr;

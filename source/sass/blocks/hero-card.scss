@@ -3,7 +3,7 @@
 .hero-card {
   padding-block-start: 20px;
   padding-block-end: 60px;
-  padding-inline: 25px;
+  // padding-inline: 25px;
 
   &--slider-1 {
     background-color: var.$background-flat-white;
@@ -75,7 +75,7 @@
 .hero-card__badge {
   grid-row: 2 / 3;
   margin: 0;
-  margin-block-start: 10px;
+  margin-block-start: 3px;
 
   @media (min-width: var.$breakpoint-tablet) {
     grid-row: 1 / 2;
@@ -126,6 +126,7 @@
   // order: 4;
   margin: 0;
   margin-block-start: 10px;
+  width: 87%;
   text-align: center;
   font-size: 14px;
   line-height: 20px;

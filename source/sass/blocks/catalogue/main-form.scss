@@ -5,7 +5,7 @@
 .main-form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 31px;
 
   @media (min-width: var.$breakpoint-tablet) and (max-width: (var.$breakpoint-desktop - 0.2px)) {
     display: grid;
@@ -17,7 +17,7 @@
 .main-form__buttons-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 21px;
 
   @media (min-width: var.$breakpoint-tablet) {
     grid-column: 1 / -1;

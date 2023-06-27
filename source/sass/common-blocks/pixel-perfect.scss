@@ -1,0 +1,19 @@
+@use "../global/variables.scss";
+
+.pixel-perfect {
+  &--fieldsets {
+    transform: translateX(3px);
+  }
+
+  &--origin-fieldset {
+    transform: translateY(2px);
+  }
+
+  &--card-price {
+    transform: translateX(-2px);
+  }
+
+  &--footer-section-contacts {
+    padding-block-end: 18px;
+  }
+}

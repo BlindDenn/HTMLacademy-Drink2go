@@ -50,7 +50,7 @@
 .main-footer__footer-section {
   @media (max-width: var.$mobile-only) {
     padding-block-start: 20px;
-    padding-block-end: 28px;
+    padding-block-end: 25px;
   }
 
   @media (min-width: var.$breakpoint-desktop) {
@@ -62,7 +62,7 @@
 
 .main-footer__copyright {
   @media (max-width: var.$mobile-only) {
-    padding-block-start: 20px;
+    padding-block-start: 16px;
   }
 
   @media (min-width: var.$breakpoint-tablet) {

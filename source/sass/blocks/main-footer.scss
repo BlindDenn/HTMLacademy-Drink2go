@@ -19,7 +19,8 @@
   @media (min-width: var.$breakpoint-desktop) {
     padding-block-start: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 20px;
   }
 }
 

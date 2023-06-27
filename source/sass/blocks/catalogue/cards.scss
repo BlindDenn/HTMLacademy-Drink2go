@@ -8,6 +8,10 @@
   @media (min-width: var.$breakpoint-tablet) {
     margin-block-start: 27px;
   }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    margin-block-start: 25px;
+  }
 }
 
 .cards__list {

@@ -10,7 +10,7 @@
   }
 
   @media (min-width: var.$breakpoint-desktop) {
-    padding-block-start: 80px;
+    padding-block-start: 100px;
     padding-block-end: 120px;
   }
 }
@@ -23,6 +23,10 @@
 .advantages__title {
   margin: 0;
   margin-block-start: 5px;
+
+  @media (min-width: var.$breakpoint-desktop) {
+    margin-block-start: 4px;
+  }
 }
 
 .advantages__list {
@@ -43,6 +47,7 @@
 
   @media (min-width: var.$breakpoint-desktop) {
     margin-block-start: 80px;
+    padding-inline: 0;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -58,7 +63,7 @@
 
   @media (min-width: var.$breakpoint-desktop) {
     padding: 0;
-    padding-block-start: 76px;
+    padding-block-start: 77px;
   }
 
   &::before {
@@ -140,5 +145,13 @@
 .advantages__item-description_line-break {
   @media (min-width: var.$breakpoint-tablet) {
     display: none;
+  }
+
+  &advantages__item-description_line-break--desktop {
+    display: none;
+
+    @media (min-width: var.$breakpoint-desktop) {
+      // display: inline;
+    }
   }
 }

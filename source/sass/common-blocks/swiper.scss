@@ -1,24 +1,28 @@
 @use "../global/variables.scss" as var;
 
+$bullet-height: 4px;
+$bullet-padding: 15px;
+
+
 .swiper-slide {
   height: unset;
 }
 
 .swiper-pagination {
-  transform: translateY(-20px);
+  transform: translateY(-40px);
 }
 
 .swiper-pagination-bullet {
   display: none;
   width: 62px;
-  height: 32px;
+  height: calc($bullet-padding * 2 + $bullet-height);
   border-radius: 0;
-  background: linear-gradient(transparent 14px, var.$color-white 14px, var.$color-white 19px, transparent 19px);
+  background: linear-gradient(transparent $bullet-padding, var.$color-white $bullet-padding, var.$color-white calc($bullet-padding + $bullet-height), transparent calc($bullet-padding + $bullet-height));
   // background: #ffffff;
   opacity: 1;
 
   &:hover {
-    background: linear-gradient(transparent, transparent 14px, var.$color-primary-25a 14px, var.$color-primary-25a 19px, transparent 19px);
+    background: linear-gradient(transparent, transparent $bullet-padding, var.$color-primary-25a $bullet-padding, var.$color-primary-25a calc($bullet-padding + $bullet-height), transparent calc($bullet-padding + $bullet-height));
   }
 
   @media (min-width: var.$breakpoint-desktop) {
@@ -29,7 +33,7 @@
 .swiper-pagination-bullet-active {
   pointer-events: none;
   opacity: 1;
-  background: linear-gradient(transparent, transparent 14px, var.$color-primary 14px, var.$color-primary 19px, transparent 19px);
+  background: linear-gradient(transparent, transparent $bullet-padding, var.$color-primary $bullet-padding, var.$color-primary calc($bullet-padding + $bullet-height), transparent calc($bullet-padding + $bullet-height));
 }
 
 .swiper-button-prev,

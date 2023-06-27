@@ -16,6 +16,12 @@
 
   // Основное состояние допольнительных кнопок
 
+  &--submit-reset {
+    @media (min-width: var.$breakpoint-desktop) {
+      width: 100%;
+    }
+  }
+
   &--reset {
     color: var.$color-primary;
     background-color: var.$color-white;

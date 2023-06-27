@@ -10,4 +10,8 @@
     margin-block-start: 40px;
     justify-content: center;
   }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    margin-block-start: 60px;
+  }
 }

@@ -41,6 +41,11 @@
 
   @media (min-width: var.$breakpoint-tablet) {
     width: 80px;
+    height: calc(100% - var.$white-height);
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    height: 100%;
   }
 }
 

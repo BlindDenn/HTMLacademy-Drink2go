@@ -25,8 +25,10 @@
 
 .fieldset__slider {
   margin-block-start: 30px;
-  // padding-inline-start: 20px;
-  // padding-inline-end: 20px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-block-start: 31px;
+  }
 }
 
 .fieldset__labels {
@@ -34,6 +36,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-block-start: 31px;
+  }
 }
 
 .fieldset__label {
@@ -57,6 +63,10 @@
 .fieldset__labels-separator {
   display: inline-block;
   padding-inline: 19px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    padding-inline: 21px;
+  }
 }
 
 

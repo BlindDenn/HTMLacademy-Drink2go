@@ -9,7 +9,7 @@
     background-color: var.$background-flat-white;
 
     @media (min-width: var.$breakpoint-tablet) and (max-width: (var.$breakpoint-desktop - 0.2px)) {
-      background: linear-gradient(to top, var.$color-white, var.$color-white 188px, var.$background-flat-white 188px);
+      background: linear-gradient(to top, var.$color-white, var.$color-white var.$white-height, var.$background-flat-white var.$white-height);
     }
   }
 
@@ -17,7 +17,7 @@
     background-color: var.$background-lavender;
 
     @media (min-width: var.$breakpoint-tablet) and (max-width: (var.$breakpoint-desktop - 0.2px)) {
-      background: linear-gradient(to top, var.$color-white, var.$color-white 188px, var.$background-lavender 188px);
+      background: linear-gradient(to top, var.$color-white, var.$color-white var.$white-height, var.$background-lavender var.$white-height);
     }
   }
 
@@ -25,7 +25,7 @@
     background-color: var.$background-espresso;
 
     @media (min-width: var.$breakpoint-tablet) and (max-width: (var.$breakpoint-desktop - 0.2px)) {
-      background: linear-gradient(to top, var.$color-white, var.$color-white 188px, var.$background-espresso 188px);
+      background: linear-gradient(to top, var.$color-white, var.$color-white var.$white-height, var.$background-espresso var.$white-height);
     }
   }
 
@@ -132,6 +132,7 @@
   line-height: 20px;
 
   @media (min-width: var.$breakpoint-tablet) {
+    width: 93%;
     margin-block-start: 16px;
     font-size: 20px;
     line-height: 32px;

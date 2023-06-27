@@ -2,11 +2,12 @@
 @use "../../../global/variables.scss" as var;
 
 .cards__pagination {
-  margin-block-start: 40px;
+  margin-block-start: 70px;
   display: flex;
   justify-content: flex-end;
 
   @media (max-width: var.$mobile-only) {
+    margin-block-start: 40px;
     justify-content: center;
   }
 }

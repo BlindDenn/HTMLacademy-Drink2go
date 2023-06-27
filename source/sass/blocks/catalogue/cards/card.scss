@@ -11,6 +11,11 @@
   &:hover {
     box-shadow: 0 5px 15px 0 var.$shadow-black-15a;
   }
+
+  @media (min-width: var.$breakpoint-tablet) {
+    padding: 30px;
+    padding-block-start: 50px;
+  }
 }
 
 .card__link {
@@ -33,6 +38,10 @@
 .card__title {
   margin: 0;
   margin-block-start: 17px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-block-start: 24px;
+  }
 }
 
 .card__description {
@@ -40,6 +49,10 @@
   margin-block-start: 4px;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-block-start: 9px;
+  }
 }
 
 .card__footer {
@@ -49,6 +62,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    padding-block-start: 20px;
+  }
 }
 
 .card__price {

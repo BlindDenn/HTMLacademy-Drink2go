@@ -4,6 +4,10 @@
 
 .cards {
   margin-block-start: 17px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-block-start: 27px;
+  }
 }
 
 .cards__list {
@@ -15,6 +19,7 @@
 
   @media (min-width: 550px) {
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   @media (min-width: 850px) {

@@ -1,12 +1,22 @@
-@use "../global/variables.scss";
+@use "../global/variables.scss" as var;
 
 .pixel-perfect {
+  &--site-nav {
+    @media (min-width: var.$breakpoint-tablet) {
+      transform: translateX(3px);
+    }
+  }
+
   &--fieldsets {
-    transform: translateX(3px);
+    @media (max-width: var.$mobile-only) {
+      transform: translateX(3px);
+    }
   }
 
   &--origin-fieldset {
-    transform: translateY(2px);
+    @media (max-width: var.$mobile-only) {
+      transform: translateY(2px);
+    }
   }
 
   &--card-price {

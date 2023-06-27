@@ -5,7 +5,7 @@
   padding-block-end: 60px;
 
   @media (min-width: var.$breakpoint-tablet) {
-    padding-block-start: 60px;
+    padding-block-start: 52px;
     padding-block-end: 100px;
   }
 
@@ -34,7 +34,8 @@
   gap: 32px;
 
   @media (min-width: var.$breakpoint-tablet) {
-    margin-block-start: 60px;
+    margin-block-start: 61px;
+    padding-inline: 10px;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     row-gap: 50px;
@@ -52,7 +53,7 @@
 
   @media (min-width: var.$breakpoint-tablet) {
     padding: 0;
-    padding-inline-start: 67px;
+    padding-inline-start: 72px;
   }
 
   @media (min-width: var.$breakpoint-desktop) {
@@ -133,5 +134,11 @@
 
   @media (min-width: var.$breakpoint-desktop) {
     text-align: center;
+  }
+}
+
+.advantages__item-description_line-break {
+  @media (min-width: var.$breakpoint-tablet) {
+    display: none;
   }
 }

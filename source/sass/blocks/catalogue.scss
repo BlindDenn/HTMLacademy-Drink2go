@@ -46,6 +46,10 @@
 .catalogue__title {
   margin: 0;
   margin-block-start: 5px;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    margin-block-start: 3px;
+  }
 }
 
 .catalogue__main-form {
@@ -58,7 +62,7 @@
   margin-top: 38px;
 
   @media (min-width: var.$breakpoint-tablet) {
-    margin-top: 36px;
+    margin-top: 42px;
   }
 
   @media (min-width: var.$breakpoint-desktop) {

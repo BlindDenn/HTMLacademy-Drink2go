@@ -22,6 +22,7 @@
     @media (min-width: var.$breakpoint-tablet) {
       font-size: 56px;
       line-height: 80px;
+      letter-spacing: 1.1px;
     }
 
     @media (min-width: var.$breakpoint-desktop) {
@@ -34,5 +35,10 @@
     text-align: start;
     font-size: 18px;
     line-height: 32px;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 }

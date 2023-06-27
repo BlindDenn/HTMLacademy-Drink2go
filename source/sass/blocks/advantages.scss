@@ -111,6 +111,11 @@
     font-size: 24px;
     line-height: 36px;
   }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    text-align: center;
+
+  }
 }
 
 .advantages__item-description {
@@ -125,5 +130,10 @@
     margin-block-start: 10px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    text-align: center;
+
   }
 }

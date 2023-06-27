@@ -23,6 +23,10 @@
       font-size: 56px;
       line-height: 80px;
     }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      text-align: left;
+    }
   }
 
   &--card {

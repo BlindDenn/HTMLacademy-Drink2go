@@ -137,7 +137,7 @@
   }
 
   @media (min-width: var.$breakpoint-desktop) {
-    max-width: calc((var.$breakpoint-desktop - 240px)) / 2;
+    max-width: calc((var.$breakpoint-desktop - 240px) / 2);
     grid-column: 2 / -1;
     grid-row: 4 / 5;
     margin: 0;

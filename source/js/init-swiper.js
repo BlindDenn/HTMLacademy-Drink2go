@@ -4,7 +4,7 @@ const initSwiper = () => {
     autoHeight: false,
     pagination: {
       el: ".swiper-pagination",
-      clicable: !0,
+      clickable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",

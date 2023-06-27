@@ -11,10 +11,15 @@
 .swiper-pagination-bullet {
   display: none;
   width: 62px;
-  height: 4px;
+  height: 32px;
   border-radius: 0;
-  background: #ffffff;
+  background: linear-gradient(transparent 14px, var.$color-white 14px, var.$color-white 19px, transparent 19px);
+  // background: #ffffff;
   opacity: 1;
+
+  &:hover {
+    background: linear-gradient(transparent, transparent 14px, var.$color-primary-25a 14px, var.$color-primary-25a 19px, transparent 19px);
+  }
 
   @media (min-width: var.$breakpoint-desktop) {
     display: inline-block;
@@ -22,8 +27,9 @@
 }
 
 .swiper-pagination-bullet-active {
+  pointer-events: none;
   opacity: 1;
-  background: var.$color-primary;
+  background: linear-gradient(transparent, transparent 14px, var.$color-primary 14px, var.$color-primary 19px, transparent 19px);
 }
 
 .swiper-button-prev,

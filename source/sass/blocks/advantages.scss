@@ -72,31 +72,31 @@
 
     @media (min-width: var.$breakpoint-tablet) {
       top: 2px;
-      left: 0px;
+      left: 0;
       transform: none;
     }
 
     @media (min-width: var.$breakpoint-desktop) {
-      top: 0px;
+      top: 0;
       left: 50%;
       transform: translateX(-50%);
     }
   }
 
   &--speed::before {
-    background-image: url('../../img/sprite.svg#adv-speed');
+    background-image: url("../../img/sprite.svg#adv-speed");
   }
 
   &--comfort::before {
-    background-image: url('../../img/sprite.svg#adv-comfort');
+    background-image: url("../../img/sprite.svg#adv-comfort");
   }
 
   &--energy::before {
-    background-image: url('../../img/sprite.svg#adv-energy');
+    background-image: url("../../img/sprite.svg#adv-energy");
   }
 
   &--eco::before {
-    background-image: url('../../img/sprite.svg#adv-eco');
+    background-image: url("../../img/sprite.svg#adv-eco");
   }
 }
 
@@ -114,7 +114,6 @@
 
   @media (min-width: var.$breakpoint-desktop) {
     text-align: center;
-
   }
 }
 
@@ -134,6 +133,5 @@
 
   @media (min-width: var.$breakpoint-desktop) {
     text-align: center;
-
   }
 }

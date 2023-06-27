@@ -8,63 +8,6 @@
   box-sizing: border-box;
 }
 
-.page {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.page__body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: var.$color-white;
-  display: flex;
-  flex-direction: column;
-}
-
-.page__main {
-  flex-grow: 1;
-}
-
-.page-container {
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
-
-  @media (min-width: var.$breakpoint-desktop) {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 40px;
-    margin: 0 auto;
-  }
-
-  &--header {
-    @media (max-width: var.$mobile-only) {
-      padding: 0;
-    }
-  }
-
-  &--swiper {
-    @media (max-width: (var.$breakpoint-desktop - 0.2px)) {
-      padding: 0;
-      margin-inline: auto;
-    }
-  }
-
-  &--footer {
-    @media (max-width: var.$mobile-only) {
-      padding: 0;
-    }
-  }
-
-  &--footer-sections {
-    @media (min-width: var.$breakpoint-tablet) {
-      padding: 0;
-    }
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -4,6 +4,7 @@
 @use "global/fonts";
 
 /* SECTIONS */
+@use "blocks/page.scss";
 @use "blocks/main-header.scss";
 @use "blocks/nav.scss";
 @use "blocks/hero-card.scss";
@@ -13,7 +14,7 @@
 @use "blocks/advantages.scss";
 
 /* COMMON BLOCKS */
-@use "blocks/badge.scss";
-@use "blocks/title.scss";
-@use "blocks/button.scss";
-@use "blocks/swiper.scss";
+@use "common-blocks/badge.scss";
+@use "common-blocks/title.scss";
+@use "common-blocks/button.scss";
+@use "common-blocks/swiper.scss";

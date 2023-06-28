@@ -38,7 +38,7 @@
   align-items: center;
 
   @media (min-width: var.$breakpoint-tablet) {
-    margin-block-start: 31px;
+    margin-block-start: 33px;
   }
 }
 
@@ -78,6 +78,7 @@
   border-radius: 4px;
 
   text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;

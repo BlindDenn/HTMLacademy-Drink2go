@@ -1,11 +1,17 @@
 @use "./../../../global/variables.scss" as var;
 
+$color-disabled: var.$color-gray;
+
 .noUi-target {
   background-color: var.$color-gray;
   border: none;
   box-shadow: none;
   padding-inline-start: 7px;
   padding-inline-end: 17px;
+
+  &[disabled] {
+    background-color: $color-disabled;
+  }
 }
 
 .noUi-horizontal {
@@ -22,6 +28,10 @@
 
 .noUi-connect {
   background-color: var.$color-primary-lighter;
+
+  [disabled] & {
+    background-color: $color-disabled;
+  }
 }
 
 .noUi-handle.noUi-handle {
@@ -47,6 +57,12 @@
     background-color: transparent;
   }
 
+  [disabled] & {
+    pointer-events: none;
+    border: 2px solid $color-disabled;
+    background-color: var.$color-white;
+  }
+
   &::after {
     display: none;
   }
@@ -59,8 +75,4 @@
   &:active::before {
     background-color: var.$color-primary;
   }
-}
-
-.noUi-handle-lower {
-  // transform: translateX(24px);
 }

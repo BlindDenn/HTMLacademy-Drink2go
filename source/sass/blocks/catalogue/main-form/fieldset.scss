@@ -99,6 +99,11 @@
     margin: 0;
   }
 
+  &[disabled] {
+    border: 2px solid var.$color-gray;
+    color: var.$color-gray;
+  }
+
   appearance: textfield;
 }
 

@@ -25,34 +25,6 @@
     visibility: hidden;
   }
 
-  // @media (max-width: var.$mobile-only) {
-
-  //   &--prev::after,
-  //   &--next::after {
-  //     display: block;
-  //     content: "";
-  //     width: 10px;
-  //     height: 10px;
-  //     position: absolute;
-  //     top: 50%;
-  //     left: 50%;
-  //     border-top: 2px solid var.$color-primary;
-  //     border-right: 2px solid var.$color-primary;
-  //   }
-
-  //   &--prev::after {
-  //     transform: translate(-50%, -50%) rotate(-135deg);
-  //   }
-
-  //   &--next::after {
-  //     transform: translate(-50%, -50%) rotate(45deg);
-  //   }
-  // }
-
-  // &--prev[disabled]::after,
-  // &--next[disabled]::after {
-  //   border-color: var.$color-white;
-  // }
 }
 
 .pagination_link {

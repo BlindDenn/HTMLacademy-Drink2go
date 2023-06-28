@@ -1,4 +1,4 @@
-# Личный проект «Drint2go»
+# Личный проект «Drink2go»
 
 * Студент: [Денис Федченко](https://up.htmlacademy.ru/adaptive/27/user/2178629).
 

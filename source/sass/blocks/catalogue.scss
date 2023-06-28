@@ -53,7 +53,6 @@
 }
 
 .catalogue__main-form {
-  // grid-column: 1 / 2;
   grid-area: filter;
 }
 
@@ -72,7 +71,5 @@
 }
 
 .catalogue__cards {
-  // grid-column: 2 / -1;
-  // grid-row: 3 / -1;
   grid-area: cards;
 }
